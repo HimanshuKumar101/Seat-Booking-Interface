@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <title>Seat Booking Interface</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="seats-container">
+      <h1>Seat Booking Interface</h1>
+
+      <div>
+        <div class="input-group">
+          <label for="rows">Rows:</label>
+          <input type="number" id="rows" min="1" max="10" value="5" />
+
+          <label for="cols">Columns:</label>
+          <input type="number" id="cols" min="1" max="10" value="5" />
+
+          <label for="blockedseats">Blocked Seats:</label>
+          <input type="number" id="blockedseats" min="0" value="3" />
+        </div>
+
+        <button id="generate">Generate Seats</button>
+      </div>
+
+      <div id="seats"></div>
+
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: #4caf50"></div>
+          <span>Available</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: #607d8b"></div>
+          <span>Booked</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: #f44336"></div>
+          <span>Blocked</span>
+        </div>
+      </div>
+
+      <p id="booked-count">Total Booked Seats: 0</p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
