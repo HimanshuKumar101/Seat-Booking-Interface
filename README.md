@@ -36,8 +36,5 @@ A simple, interactive seat booking system built using **HTML**, **CSS**, and **J
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/HimanshuKumar101/Seat-Booking-Interface.git
-   
-
-
 2. **Open index.html in your browser**  
 Or use a live server extension if you're using VS Code.
